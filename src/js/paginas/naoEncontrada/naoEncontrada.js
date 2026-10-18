@@ -1,3 +1,5 @@
+import './naoEncontrada.css';
+
 function naoEncontrada(app) {
   app.innerHTML = `
     <section class="nao-encontrada">

@@ -5,7 +5,6 @@ import detalhe from '../paginas/produtos/detalhes/detalhe.js'
 import mapa from '../paginas/mapa/mapa.js'
 import favorito from '../paginas/favorito/favorito.js'
 import conta from '../paginas/conta/conta.js'
-import sorteio from '../paginas/sorteios/sorteio.js'
 import naoEncontrada from '../paginas/naoEncontrada/naoEncontrada.js'
 
 const mapaderotas = [
@@ -15,8 +14,7 @@ const mapaderotas = [
     mapa,
     enviar,
     favorito,
-    conta,
-    sorteio
+    conta
 ]
 
 export { mapaderotas, naoEncontrada }

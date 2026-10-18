@@ -1,3 +1,4 @@
+import './conta.css';
 import listaDeLivros from '../../dadosMockados/dados.js'
 import { entrar, sair, usuarioAtual } from '../../sessao/sessao.js'
 
