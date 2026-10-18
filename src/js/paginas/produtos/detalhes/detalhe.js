@@ -23,6 +23,7 @@ function obterIdDaURL() {
   return Number.isInteger(id) && id > 0 ? id : null;
 }
 
+// ANABELLE ----------------------------------------------------------------------
 function detalhe(app) {
   const id = obterIdDaURL();
 
@@ -31,7 +32,11 @@ function detalhe(app) {
   // próprio, em vez de deixar a tela em branco ou exibir outro livro.
   const livro = id === null
     ? undefined
-    : listaDeLivros.find(registro => registro.id === id);
+    : listaDeLivros.find(registro => registro.id === id); 
+
+// ATÉ AQUI ---------------------------------------------------------------------
+
+
 
   if (!livro) {
     app.innerHTML = `

@@ -5,9 +5,11 @@ import listaDeLivros from '../../dadosMockados/dados.js';
 // ou criar uma sessão. O id e o nome existem nos registros mockados atuais.
 const publicadorDaDemonstracao = listaDeLivros[0];
 
+// ANABELLE ----------------------------------------------------------------------
 function normalizarTexto(valor) {
   return valor.trim().replace(/\s+/g, ' ');
 }
+// ATÉ AQUI ---------------------------------------------------------------------
 
 function publicar(app) {
   app.innerHTML = `
@@ -120,6 +122,9 @@ function publicar(app) {
     // find compara o título normalizado sem diferenciar maiúsculas nem espaços
     // repetidos. Os livros iniciais não registram autoria, então o título é a
     // chave comum disponível para também recusar repetidos da lista mockada.
+
+  
+  // ANABELLE -------------------------------------------------------------------------------------------
     const repetido = listaDeLivros.find(livro =>
       normalizarTexto(livro.titulo).toLocaleLowerCase('pt-BR') === titulo.toLocaleLowerCase('pt-BR')
     );
@@ -129,6 +134,8 @@ function publicar(app) {
       mensagem.classList.add('publicacao__mensagem--erro');
       return;
     }
+
+// ATÉ AQUI -------------------------------------------------------------------------------------------
 
     // push adiciona o exemplar aos dados mockados em memória. O id seguinte
     // mantém cada registro identificável e o publicador referencia um perfil
@@ -148,7 +155,10 @@ function publicar(app) {
       publicadorNome: publicadorDaDemonstracao.publicadorNome,
       img: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=480&q=80',
     };
+
+    // ANABELLE -------------------------------------------------------------------------------------------
     listaDeLivros.push(novoLivro);
+    // ATÉ AQUI -------------------------------------------------------------------------------------------
 
     mensagem.classList.remove('publicacao__mensagem--erro');
     mensagem.textContent = `“${novoLivro.titulo}” foi adicionado à biblioteca. `;

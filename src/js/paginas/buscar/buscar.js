@@ -74,6 +74,8 @@ function adicionarEventos(app) {
     const listaCategoria = document.querySelectorAll(".lista-categoria");
 
     if (formBusca && inputBusca) {
+
+        // GABRIELA ---------------------------------------------------------------------
         formBusca.addEventListener("submit", (e) => {
             e.preventDefault();
             const termo = inputBusca.value.trim();
@@ -83,6 +85,7 @@ function adicionarEventos(app) {
                 window.location.hash = "#produtos";
             }
         });
+        // ATÉ AQUI ----------------------------------------------------------------------
     }
 
     listaCategoria.forEach((item) => {

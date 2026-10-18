@@ -5,6 +5,7 @@ import { navbar } from './navbar/navbar.js'
 const app = document.getElementById("app")
 navbar(mapaderotas)
 
+// ROBERTA ----------------------------------------------------------------
 function renderizarPagina() {
     const hashCompleto = window.location.hash || '#buscar'
     const rotaBase = hashCompleto.split('?')[0]
@@ -17,6 +18,8 @@ function renderizarPagina() {
         naoEncontrada.pagina(app)
     }
 }
+// ATÉ AQUI ----------------------------------------------------------------
+
 window.addEventListener("hashchange", ()=>{
     renderizarPagina()
 })

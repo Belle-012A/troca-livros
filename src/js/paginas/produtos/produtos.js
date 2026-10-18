@@ -26,6 +26,7 @@ function obterParametrosURL() {
     };
 }
 
+// GABRIELA ----------------------------------------------------------------------------------------
 function filtrarLivros(termo, categoria) {
     return listaDeLivros.filter((livro) => {
         const termoBusca = termo.toLowerCase();
@@ -41,7 +42,7 @@ function filtrarLivros(termo, categoria) {
 
         return bateCategoria && bateTermo;
     });
-}
+} // ATÉ AQUI ----------------------------------------------------------------------------------------
 
 function ordenarLivros(livros, criterio) {
     const copia = [...livros];
@@ -52,9 +53,12 @@ function ordenarLivros(livros, criterio) {
 }
 
 function produtos(app) {
+
+    // GABRIELA ----------------------------------------------------------------------------------------
     const { termo, categoria } = obterParametrosURL();
     const livrosFiltrados = filtrarLivros(termo, categoria);
     const livrosOrdenados = ordenarLivros(livrosFiltrados, ordenacaoAtual);
+    // ATÉ AQUI ----------------------------------------------------------------------------------------
 
     const valorInput = termo || (categoria ? categoria : '');
 

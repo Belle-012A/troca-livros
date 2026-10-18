@@ -12,9 +12,11 @@ function escaparHTML(valor) {
   })[caractere])
 }
 
+// ROBERTA ----------------------------------------------------------------
 function publicacoesDoUsuario(idUsuario) {
   return listaDeLivros.filter(livro => livro.publicadorId === idUsuario)
 }
+// ATÉ AQUI ----------------------------------------------------------------
 
 function renderizarLogin(app) {
   app.innerHTML = `
