@@ -1,10 +1,10 @@
-# Ki-Oferta
+# Troca-de-livros
 
 > **Projeto em construção.** Este repositório está em desenvolvimento ativo como projeto de estudos (FATEC) e ainda não representa uma versão final.
 
 ## Sobre o projeto
 
-O Ki-Oferta é um modelo de aplicação criado com duas frentes de aprendizado em mente:
+O Troca-de-livros é um modelo de aplicação criado com duas frentes de aprendizado em mente:
 
 1. **Desenvolvimento web moderno** — uso de ferramentas atuais de build e um fluxo de trabalho baseado em módulos JavaScript (ES Modules), organização de código em componentes/páginas e boas práticas.
 2. **Conceitos de desenvolvimento de aplicativos** — o mesmo código-fonte web é empacotado como um aplicativo mobile nativo (Android/iOS) usando o [Capacitor](https://capacitorjs.com/), permitindo estudar as diferenças entre web e mobile.
@@ -43,17 +43,6 @@ Abaixo está um passo-a-passo completo para clonar, verificar pré-requisitos, i
 
 - (Opcional, para editar código) Editor/IDE: VS Code https://code.visualstudio.com/
 
-Se você pretende empacotar o app para Android/iOS com Capacitor, também precisa:
-
-- Java JDK 11+ (para Android)
-  - Verifique: `java -version`
-
-- Android Studio (inclui SDK, AVD e `adb`)
-  - Configurar ANDROID_HOME/ANDROID_SDK_ROOT conforme instruções do Android Studio
-
-- Xcode (somente macOS, para iOS)
-
-- (Opcional) Ferramentas CLI do Capacitor (podem ser usadas via npx): `@capacitor/cli` está como devDependency; usar via `npx` evita instalação global.
 
 ### 2) Clonar o repositório
 
@@ -73,7 +62,7 @@ No diretório do projeto, rode:
 
 ```bash
 # instalar dependências
-npm install
+npm install ou npm.cmd install no terminal do VS Code
 ```
 
 Se você preferir instalar versões exatamente como travadas em lockfile (se existir), use `npm ci`.
@@ -83,7 +72,7 @@ Se houver erros de permissão em sistemas Unix, evite `sudo` no primeiro passo �
 ### 4) Rodar em modo desenvolvimento (navegador, com hot-reload)
 
 ```bash
-npm run dev
+npm run dev ou npm.cmd run dev no VS Code
 ```
 
 - O Vite iniciará um servidor local (por padrão em http://localhost:5173). O terminal mostrará a URL exata.
